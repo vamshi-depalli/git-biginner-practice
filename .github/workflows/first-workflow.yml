@@ -19,3 +19,8 @@ jobs:
 
       - name: Check README exists
         run: test -f README.md && echo "README.md exists!"
+        
+        
+      - name: Verify README heading
+        run: grep -q "^# Git Beginner Practice$" README.md && echo "README heading check passed!"
+
