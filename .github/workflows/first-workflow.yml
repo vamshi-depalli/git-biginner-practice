@@ -22,5 +22,5 @@ jobs:
         
         
       - name: Verify README heading
-        run: grep -q "^# Wrong Heading$" README.md && echo "README heading check passed!"
+        run: grep -q "^# Git Beginner Practice$" README.md && echo "README heading check passed!"
 
