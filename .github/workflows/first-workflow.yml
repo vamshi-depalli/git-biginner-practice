@@ -11,5 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
       - name: Print a success message
         run: echo "Hello! My first GitHub Actions workflow is running."
+
+      - name: Check README exists
+        run: test -f README.md && echo "README.md exists!"
