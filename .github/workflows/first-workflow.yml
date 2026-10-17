@@ -24,3 +24,6 @@ jobs:
       - name: Verify README heading
         run: grep -q "^# Git Beginner Practice$" README.md && echo "README heading check passed!"
 
+      - name: Check DevOps notes file
+        run: test -f devops-notes.txt && echo "DevOps notes file exists!"
+        
