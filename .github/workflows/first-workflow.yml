@@ -30,5 +30,4 @@ jobs:
       - name: Verify DevOps notes content
         run: grep -q "^Learning GitHub Actions and CI$" devops-notes.txt && echo "DevOps notes content check passed!"
         
-      - name: Intentional failure test
-        run: exit 1
+      
