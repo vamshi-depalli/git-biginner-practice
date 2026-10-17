@@ -27,3 +27,6 @@ jobs:
       - name: Check DevOps notes file
         run: test -f devops-notes.txt && echo "DevOps notes file exists!"
         
+      - name: Verify DevOps notes content
+        run: grep -q "^Learning GitHub Actions and CI$" devops-notes.txt && echo "DevOps notes content check passed!"
+        
