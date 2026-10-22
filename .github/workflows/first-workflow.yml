@@ -30,4 +30,6 @@ jobs:
       - name: Verify DevOps notes content
         run: grep -q "^Learning GitHub Actions and CI$" devops-notes.txt && echo "DevOps notes content check passed!"
         
-      
+      - name: Build project
+        run: echo "Build completed successfully!"
+        
