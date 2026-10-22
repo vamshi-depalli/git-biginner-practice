@@ -33,3 +33,5 @@ jobs:
       - name: Build project
         run: echo "Build completed successfully!"
         
+      - name: Test project
+        run: echo "All tests passed!"
