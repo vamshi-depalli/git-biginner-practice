@@ -33,5 +33,6 @@ jobs:
       - name: Build project
         run: echo "Build completed successfully!"
         
-      - name: Test project
-        run: echo "All tests passed!"
+      - name: Run Python unit tests
+        run: python3 -m unittest -v test_calculator.py
+        
