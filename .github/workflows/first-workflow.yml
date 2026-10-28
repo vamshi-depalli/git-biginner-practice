@@ -45,4 +45,11 @@ jobs:
           echo "Deployment package created successfully!"
           ls -l deployment-package
 
+
+      - name: Upload deployment package
+        uses: actions/upload-artifact@v4
+        with:
+          name: calculator-deployment-package
+          path: deployment-package/
+
         
