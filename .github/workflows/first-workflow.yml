@@ -35,4 +35,14 @@ jobs:
         
       - name: Run Python unit tests
         run: python3 -m unittest -v test_calculator.py
+
+
+      - name: Create deployment package
+        run: |
+          mkdir -p deployment-package
+          cp calculator.py deployment-package/
+          cp test_calculator.py deployment-package/
+          echo "Deployment package created successfully!"
+          ls -l deployment-package
+
         
