@@ -6,7 +6,7 @@ from calculator import add
 class TestCalculator(unittest.TestCase):
 
     def test_add_positive_numbers(self):
-      self.assertEqual(add(5, 3), 9)
+      self.assertEqual(add(5, 3), 8)
 
     def test_add_zero(self):
         self.assertEqual(add(5, 0), 5)
